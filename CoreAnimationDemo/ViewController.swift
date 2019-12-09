@@ -15,7 +15,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let optionsView = SelectOptionView.init(frame: CGRect(x: 20, y: 100, width: 100, height: 40))
+        let optionsView = SelectOptionView.init(frame: CGRect(x: 20, y: 100, width: 100, height: 40), title: "type")
     
         optionsView.backgroundColor = .red
         

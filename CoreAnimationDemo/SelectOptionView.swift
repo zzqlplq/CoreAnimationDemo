@@ -13,6 +13,7 @@ class SelectOptionView: UIView {
     typealias selectedBlock = (Int) -> ()
 
     var titleLab: UILabel!
+    var contentLab: UILabel!
     private var optionView: OptionsView?
     var options: [String]?
     var selected: selectedBlock?
@@ -21,14 +22,18 @@ class SelectOptionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override init(frame: CGRect) {
+    init(frame: CGRect, title: String) {
         super.init(frame: frame)
         addSubviews()
+        contentLab.text = title
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandle))
         self.addGestureRecognizer(tap)
     }
 
     func addSubviews() {
+        contentLab = UILabel.init()
+        self.addSubview(contentLab)
+        
         titleLab = UILabel.init()
         titleLab.text = "select value"
         self.addSubview(titleLab)
@@ -55,7 +60,8 @@ class SelectOptionView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.titleLab.frame = self.bounds
+        self.titleLab.frame = CGRect(x: 0, y: 0, width: self.bounds.width / 3, height: self.bounds.height)
+        self.contentLab.frame = CGRect(x: self.titleLab.bounds.width, y: 0, width: self.bounds.width / 3 * 2, height: self.bounds.height)
     }
 }
 

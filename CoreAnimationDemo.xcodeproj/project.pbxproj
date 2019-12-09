@@ -18,6 +18,9 @@
 		1D63ADA72396659E003AABE3 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADA62396659E003AABE3 /* GuideViewController.swift */; };
 		1D63ADA923966727003AABE3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADA823966727003AABE3 /* BaseViewController.swift */; };
 		1D63ADAB23966932003AABE3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADAA23966932003AABE3 /* Const.swift */; };
+		1D63ADAF23990FC3003AABE3 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADAE23990FC3003AABE3 /* AnimationViewController.swift */; };
+		1D63ADB223991081003AABE3 /* CABaseAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADB123991081003AABE3 /* CABaseAnimationViewController.swift */; };
+		1D63ADB423991198003AABE3 /* CATransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63ADB323991198003AABE3 /* CATransitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		1D63ADA62396659E003AABE3 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		1D63ADA823966727003AABE3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1D63ADAA23966932003AABE3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		1D63ADAE23990FC3003AABE3 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		1D63ADB123991081003AABE3 /* CABaseAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABaseAnimationViewController.swift; sourceTree = "<group>"; };
+		1D63ADB323991198003AABE3 /* CATransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				1D63ADAA23966932003AABE3 /* Const.swift */,
 				1D63ADA823966727003AABE3 /* BaseViewController.swift */,
 				1D63ADA62396659E003AABE3 /* GuideViewController.swift */,
+				1D63ADAE23990FC3003AABE3 /* AnimationViewController.swift */,
+				1D63ADB123991081003AABE3 /* CABaseAnimationViewController.swift */,
+				1D63ADB323991198003AABE3 /* CATransitionViewController.swift */,
 				1D63AD91238CF6A6003AABE3 /* Main.storyboard */,
 				1D63AD94238CF6A7003AABE3 /* Assets.xcassets */,
 				1D63AD96238CF6A7003AABE3 /* LaunchScreen.storyboard */,
@@ -162,12 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D63ADB223991081003AABE3 /* CABaseAnimationViewController.swift in Sources */,
 				1D63ADA5239509B9003AABE3 /* SelectOptionView.swift in Sources */,
 				1D63AD90238CF6A6003AABE3 /* ViewController.swift in Sources */,
 				1D63AD8C238CF6A6003AABE3 /* AppDelegate.swift in Sources */,
 				1D63ADA72396659E003AABE3 /* GuideViewController.swift in Sources */,
 				1D63AD8E238CF6A6003AABE3 /* SceneDelegate.swift in Sources */,
 				1D63ADA923966727003AABE3 /* BaseViewController.swift in Sources */,
+				1D63ADAF23990FC3003AABE3 /* AnimationViewController.swift in Sources */,
+				1D63ADB423991198003AABE3 /* CATransitionViewController.swift in Sources */,
 				1D63ADAB23966932003AABE3 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
