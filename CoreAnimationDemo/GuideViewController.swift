@@ -43,7 +43,13 @@ class GuideViewController: BaseViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    
+        let vc = CATransitionViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+    
     
     lazy var tableView: UITableView = {
       let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))

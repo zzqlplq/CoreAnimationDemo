@@ -32,10 +32,12 @@ class SelectOptionView: UIView {
 
     func addSubviews() {
         contentLab = UILabel.init()
+        contentLab.font = UIFont.systemFont(ofSize: 14)
         self.addSubview(contentLab)
         
         titleLab = UILabel.init()
-        titleLab.text = "select value"
+        titleLab.font = UIFont.systemFont(ofSize: 14)
+        titleLab.text = "select"
         self.addSubview(titleLab)
     }
     
@@ -45,7 +47,7 @@ class SelectOptionView: UIView {
             self.optionView = OptionsView(originFrame: self.frame , options: options)
             self.optionView!.show()
             self.optionView!.selected { [unowned self] (index) in
-                self.titleLab.text = options[index]
+                self.contentLab.text = options[index]
                 self.selected?(index)
             }
         } else {

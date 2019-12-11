@@ -16,8 +16,7 @@ class CABaseAnimationViewController: AnimationViewController {
     }
 
     
-    func addSubviews() {
-        self.view.addSubview(generateTestView())
+    override func addSubviews() {
     }
     
     

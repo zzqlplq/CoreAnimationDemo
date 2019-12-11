@@ -16,6 +16,11 @@ protocol RawValueToArray: CaseIterable {
     static var toArray: [String] { get }
 }
 
+protocol RealProperty {
+    associatedtype DataType
+    static var realProperty:[DataType] {get}
+}
+
 
 enum CAAnimationType: String, RawValueToArray {
     case basic = "CABasicAnimation"
@@ -26,18 +31,20 @@ enum CAAnimationType: String, RawValueToArray {
 }
 
 
-enum TransitionType: String, RawValueToArray {
-    
+enum TransitionType: String, RawValueToArray, RealProperty {
     case fade
     case moveIn
     case push
     case reveal
     
     static var toArray: [String] = TransitionType.allCases.map{"\($0.rawValue)"}
+    static var realProperty: [CATransitionType] = [.fade, .moveIn, .push, .reveal]
 }
 
 
-enum TransitionSubtype: String, RawValueToArray {
+
+
+enum TransitionSubtype: String, RawValueToArray, RealProperty {
     
     case fromRight
     case fromLeft
@@ -45,4 +52,5 @@ enum TransitionSubtype: String, RawValueToArray {
     case fromBottom
     
     static var toArray: [String] = TransitionSubtype.allCases.map{"\($0.rawValue)"}
+    static var realProperty: [CATransitionSubtype] = [.fromRight, .fromLeft, .fromTop, .fromBottom]
 }
